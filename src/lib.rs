@@ -474,6 +474,9 @@ extern "C" {
     #[wasm_bindgen(method)]
     pub fn addLatLng(this: &Polyline, latlng: &LatLng);
 
+    #[wasm_bindgen(method)]
+    pub fn getBounds(this: &Polyline) -> LatLngBounds;
+
     // Polygon
 
     #[derive(Debug)]
